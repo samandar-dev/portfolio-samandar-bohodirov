@@ -1,0 +1,624 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 102px;
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // HERO LEFT PART ===================
+
+  &__left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -55%);
+
+    width: 50%;
+    height: auto;
+  }
+  &__left-tit {
+    color: $--color-1;
+    font-family: $--font-family-1;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    font-size: 25px;
+
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  &__left-name {
+    color: var(--primary-colors);
+    font-family: $--font-family-1;
+    letter-spacing: -0.2px;
+    font-size: 130px;
+    line-height: 1.1;
+    font-weight: 700;
+
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__text-box {
+    position: relative;
+    width: auto;
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+
+    perspective: 300px;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  &__text {
+    color: $--color-1;
+    font-family: $--font-family-1;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    font-size: 40px;
+
+    margin-right: 20px;
+    padding-top: 20px;
+  }
+  &__anim-box {
+    width: auto;
+    height: auto;
+    padding: 0;
+
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+
+    transform-style: preserve-3d;
+    animation: anim-box 2.2s infinite ease-out;
+  }
+  &__anim-beck {
+    color: $--color-1;
+    font-family: $--font-family-1;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    font-size: 75px;
+
+    display: inline-block;
+  }
+  &__anim-beck:nth-child(2) {
+    transform: rotateX(180deg);
+  }
+  @keyframes anim-box {
+    0% {
+      transform: rotateX(0deg);
+    }
+    25% {
+      transform: rotateX(0deg);
+    }
+    50% {
+      transform: rotateX(-46deg);
+    }
+    75% {
+      transform: rotateX(180deg);
+    }
+    100% {
+      transform: rotateX(180deg);
+    }
+  }
+  &__btns {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 55px;
+  }
+  &__say-btn {
+    margin-right: 35px;
+    a {
+      display: inline-block;
+    }
+    &:hover {
+      color: $--color-1;
+      i {
+        color: $--color-1;
+      }
+    }
+  }
+  &__mouse-btn {
+    border: none;
+    font-size: 40px;
+    line-height: 40px;
+    color: $--color-1;
+    background: transparent;
+    transition: all 0.3s ease;
+
+    a:hover {
+      color: var(--primary-colors);
+    }
+
+    &:hover {
+      color: var(--primary-colors);
+    }
+  }
+
+  // HERO RIGHT PART ===================
+
+  &__right {
+    position: absolute;
+    top: 0;
+    right: -50px;
+
+    width: 50%;
+    height: 100%;
+    perspective: 500px;
+    p {
+      position: absolute;
+      top: 50%;
+      right: -120px;
+      transform: translate(0, -60%);
+
+      font-size: 260px;
+      font-weight: 700;
+      color: transparent;
+      font-family: $--font-family-1;
+      -webkit-text-stroke: 3px rgba(255, 255, 255, 0.3);
+      z-index: 4;
+    }
+  }
+  &__right-one {
+    position: absolute;
+    right: -50px;
+    top: 50px;
+
+    width: 380px;
+    height: 80%;
+    background-color: var(--primary-colors);
+    transform-style: preserve-3d;
+    transition: all 0.25s linear;
+    z-index: -4;
+  }
+  &__right-two {
+    position: absolute;
+    width: 440px;
+    height: 470px;
+    top: 150px;
+    right: 0px;
+    transform-style: preserve-3d;
+    transition: all 0.1s linear;
+    border: 5px solid #fff;
+    overflow: hidden;
+    z-index: 5;
+  }
+  &__right-two-img-box {
+    width: 100%;
+    max-width: 440px;
+    height: 470px;
+    transform: scale(1.4);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__right-three {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    bottom: 40px;
+    left: 90px;
+    background: var(--primary-colors);
+    transform-style: preserve-3d;
+    transition: all 0.18s linear;
+    z-index: 6;
+  }
+  &__right-four {
+    position: absolute;
+    width: 80px;
+    height: 110px;
+    top: 130px;
+    left: 50px;
+    background: var(--primary-colors);
+    transform-style: preserve-3d;
+    transition: all 0.22s linear;
+    z-index: 1;
+  }
+  &__right-five {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    bottom: 260px;
+    right: -170px;
+    background: var(--primary-colors);
+    transform-style: preserve-3d;
+    transition: all 0.11s linear;
+    z-index: 1;
+  }
+
+  // COLORS PART =======================
+
+  &__colors-box {
+    position: fixed;
+    top: 25%;
+    right: -200px;
+    width: 200px;
+    height: 360px;
+    background: $--color-2;
+    padding: 40px 20px 33px 30px;
+    transition: all 0.4s ease;
+    z-index: 500;
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 16px;
+      color: $--color-1;
+      font-family: $--font-family-1;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 4px;
+      display: inline-block;
+    }
+  }
+  &__colors-btn {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $--color-2;
+
+    button {
+      border: none;
+      font-size: 28px;
+      line-height: 25px;
+      color: $--color-1;
+      background: transparent;
+    }
+  }
+  &__colors-list {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 32px;
+    margin-bottom: 22px;
+  }
+  &__colors-item {
+    width: 30px;
+    height: 30px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    span {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: inline-block;
+      background: #4169e1;
+      cursor: pointer;
+    }
+
+    &:nth-child(2) {
+      span {
+        background: #66b95c;
+      }
+    }
+    &:nth-child(3) {
+      span {
+        background: #ff9800;
+      }
+    }
+    &:nth-child(4) {
+      span {
+        background: #ff5e94;
+      }
+    }
+    &:nth-child(5) {
+      span {
+        background: #fa5b0f;
+      }
+    }
+    &:nth-child(6) {
+      span {
+        background: $--color-5;
+      }
+    }
+    &:nth-child(7) {
+      span {
+        background: #9200ee;
+      }
+    }
+    &:nth-child(8) {
+      span {
+        background: #00d4bd;
+      }
+    }
+    &:nth-child(9) {
+      span {
+        background: #5e9e9f;
+      }
+    }
+    &:nth-child(10) {
+      span {
+        background: #ea4343;
+      }
+    }
+    &:nth-child(11) {
+      span {
+        background: #666d41;
+      }
+    }
+    &:nth-child(12) {
+      span {
+        background: #fe0000;
+      }
+    }
+  }
+  &__megic-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+  }
+  &__megic-one {
+    position: relative;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid $--color-1;
+    margin-right: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: $--color-1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__megic-two {
+    border: none;
+    font-size: 28px;
+    line-height: 25px;
+    color: $--color-4;
+    background: transparent;
+  }
+  .heroCol-show {
+    right: 0;
+  }
+
+  // HERO PROFIL LINKS PART ===============
+
+  &__myprofiles {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+  }
+  &__myprofiles-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  &__myprofiles-item {
+    margin-bottom: 15px;
+
+    a {
+      font-size: 30px;
+      line-height: 30px;
+      color: $--color-1;
+      display: inline-block;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: var(--primary-colors);
+      }
+    }
+  }
+  &__myprofiles-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+  &__email-link {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+
+    a {
+      font-size: 21px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $--color-1;
+      display: inline-block;
+      text-decoration: none;
+      font-family: $--font-family-2;
+      padding-bottom: 5px;
+
+      &:hover {
+        color: $--color-1;
+      }
+    }
+  }
+}
+
+// MEDIA PART ==================
+
+@media screen and (max-width: 1400px) {
+  .hero {
+    &__left {
+      transform: translate(0, -63%);
+    }
+    &__left-tit {
+      font-size: 20px;
+      line-height: 34px;
+      margin-bottom: 10px;
+    }
+    &__left-name {
+      font-size: 80px;
+      line-height: 88px;
+      margin-bottom: 0;
+    }
+    &__text-box {
+      height: 60px;
+      margin-bottom: 0px;
+    }
+    &__text {
+      font-size: 25px;
+      line-height: 42px;
+      margin-right: 10px;
+      padding-top: 0px;
+    }
+    &__anim-beck {
+      font-size: 35px;
+      line-height: 60px;
+    }
+    &__btns {
+      margin-top: 25px;
+      margin-bottom: 40px;
+    }
+    &__say-btn {
+      margin-right: 28px;
+    }
+    &__mouse-btn {
+      font-size: 35px;
+      line-height: 30px;
+    }
+
+    // HERO RIGHT PART ===================
+
+    &__right {
+      p {
+        right: -40px;
+      }
+    }
+
+    &__right-one {
+      width: 250px;
+      height: 90%;
+      top: 0;
+      right: 0;
+    }
+    &__right-two {
+      width: 285px;
+      height: 305px;
+      top: 170px;
+      right: 70px;
+    }
+    &__right-two-img-box {
+      max-width: 285px;
+      height: 305px;
+      transform: scale(1.3);
+    }
+    &__right-three {
+      width: 170px;
+      height: 170px;
+      left: 50px;
+    }
+    &__right-four {
+      width: 60px;
+      height: 90px;
+      top: 50px;
+      left: 30px;
+    }
+    &__right-five {
+      width: 35px;
+      height: 50px;
+      bottom: 240px;
+      right: -80px;
+    }
+
+    // HERO PROFIL LINKS PART ===============
+
+    &__myprofiles {
+      left: 30px;
+    }
+    &__myprofiles-item {
+      margin-bottom: 10px;
+
+      a {
+        font-size: 20px;
+        line-height: 18px;
+      }
+    }
+    &__email-link {
+      bottom: 20px;
+      left: 30px;
+
+      a {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1040px) {
+  .hero {
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      display: none;
+    }
+
+    // HERO PROFIL LINKS PART ===============
+
+    &__myprofiles {
+      display: none;
+    }
+    &__email-link {
+      bottom: 20px;
+      left: 20px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    &__left {
+      width: 100%;
+      min-width: 280px;
+    }
+    &__left-name {
+      font-size: 60px;
+      line-height: 66px;
+    }
+    &__text-box {
+      height: 50px;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 34px;
+    }
+    &__anim-beck {
+      font-size: 30px;
+      line-height: 51px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    &__left-name {
+      font-size: 50px;
+      line-height: 56px;
+    }
+  }
+}

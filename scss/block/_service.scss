@@ -1,0 +1,255 @@
+.service {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 135px 0;
+
+  &__anim-element1 {
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    width: 157px;
+    height: 227px;
+    background-color: var(--primary-colors);
+  }
+  &__anim-element2 {
+    position: absolute;
+    left: 0px;
+    bottom: 45px;
+    width: 415px;
+    height: 230px;
+    background-color: $--color-5;
+    z-index: -1;
+  }
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  &__list {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: -10px;
+  }
+  &__item {
+    width: 50%;
+    padding-left: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+    &:nth-child(1) {
+      padding-right: 60px;
+    }
+    &:nth-child(6) {
+      text-align: center;
+      max-width: 475px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h4 {
+        margin-bottom: 35px;
+      }
+      a {
+        color: $--color-3;
+        background: transparent;
+        text-decoration: none;
+
+        &:hover {
+          color: $--color-1;
+          background: var(--primary-colors);
+          i {
+            color: $--color-1;
+          }
+        }
+        i {
+          color: $--color-3;
+        }
+      }
+    }
+  }
+  &__item-centent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 60px 60px 56px 200px;
+
+    background-color: $--color-1;
+    border-radius: $--border-redius-2;
+    box-shadow: 13px 13px 90px #8304040f;
+
+    display: flex;
+    perspective: 300;
+  }
+  &__tit {
+    color: var(--primary-colors);
+  }
+  &__title {
+    color: $--color-3;
+  }
+  &__text {
+    padding-top: 32px;
+    color: $--color-4;
+  }
+  &__item-left {
+    position: absolute;
+    top: 10%;
+    left: 60px;
+    width: auto;
+    height: auto;
+
+    span {
+      position: absolute;
+      top: 45px;
+      left: 20px;
+      font-size: 72px;
+      line-height: 72px;
+      z-index: 2;
+    }
+    img {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      width: 112px;
+      height: 112px;
+      object-fit: cover;
+    }
+  }
+  &__item-right {
+    width: 100%;
+    height: auto;
+  }
+  &__item-title {
+    color: $--color-3;
+    font-family: $--font-family-1;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    font-size: 36px;
+
+    margin-bottom: 3px;
+  }
+  &__item-tit {
+    color: $--color-4;
+    font-family: $--font-family-1;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    font-size: 18px;
+
+    margin-bottom: 12px;
+
+    span {
+      font-size: 30px;
+      color: var(--primary-colors);
+    }
+  }
+  &__item-text {
+    color: $--color-4;
+  }
+}
+
+// ------------------- MEDIA PART -------------------
+
+@media screen and (max-width: 1400px) {
+  .service {
+    &__anim-element1 {
+      width: 110px;
+      height: 170px;
+    }
+    &__anim-element2 {
+      width: 270px;
+      height: 190px;
+    }
+    &__item-centent {
+      padding: 50px 30px 50px 130px;
+    }
+    &__text {
+      padding-top: 32px;
+      color: $--color-4;
+    }
+    &__item {
+      &:nth-child(6) {
+        h4 {
+          max-width: 305px;
+        }
+      }
+    }
+    &__item-left {
+      left: 30px;
+      span {
+        font-size: 40px;
+        line-height: 40px;
+        top: 45px;
+        left: 22px;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+        top: 30px;
+      }
+    }
+    &__item-title {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 0;
+    }
+    &__item-tit {
+      font-size: 16px;
+      span {
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1040px) {
+  .service {
+    &__anim-element1,
+    &__anim-element2 {
+      display: none;
+    }
+    &__list {
+      flex-direction: column;
+      margin: 0;
+    }
+    &__item {
+      width: 100%;
+      padding-left: 0;
+
+      &:nth-child(6) {
+        text-align: left;
+        justify-content: start;
+        margin-left: 0;
+        h4 {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .service {
+    padding: 100px 0;
+    &__item-centent {
+      padding: 50px 30px;
+      flex-direction: column;
+    }
+    &__item-left {
+      position: relative;
+      width: 110px;
+      height: 90px;
+      left: 0;
+
+      span {
+        top: 16px;
+        left: 22px;
+      }
+      img {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

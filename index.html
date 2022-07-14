@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Samandar Bohodirov</title>
+</head>
+
+<body>
+
+  <!-- -------------------------- HEADER HERO PART -------------------------- -->
+
+  <section class="header-hero" id="header-hero">
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo-box">
+            <a href="#">
+              <h1 class="header__title cursorHover">BS</h1>
+            </a>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link cursorHover" href="#">Home</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link cursorHover" href="#about">About</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link cursorHover" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link cursorHover" href="#service">Service</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link cursorHover" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__menu-btn-box">
+            <button class="header__menu-btn cursorHover">
+              <i class='bx bx-menu'></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- -------------------------- HERO PART -------------------------- -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__left">
+            <p class="hero__left-tit">Hello, I'm</p>
+            <h2 class="hero__left-name">Samandar</h2>
+
+            <div class="hero__text-box">
+              <p class="hero__text">Frontend </p>
+
+              <div class="hero__anim-box">
+                <p class="hero__anim-beck">Developer</p>
+                <p class="hero__anim-beck">Developer</p>
+              </div>
+            </div>
+
+            <div class="hero__btns">
+              <button class="hero__say-btn sectionBTN-1 cursorHover">
+                <a href="#contact">
+                  Say Hello <i class='bx bx-envelope'></i>
+                </a>
+              </button>
+              <a class="hero__about-btn sectionBTN-2 cursorHover" href="#about">About Me</a>
+            </div>
+
+            <button class="hero__mouse-btn cursorHover">
+              <a href="#about">
+                <i class='bx bx-mouse bx-tada'></i>
+              </a>
+            </button>
+          </div>
+
+          <div class="hero__right">
+            <p>bsd</p>
+            <span class="hero__right-one heroAnim-element"></span>
+            <span class="hero__right-two heroAnim-element">
+              <div class="hero__right-two-img-box">
+                <img src="./media/images//my-img-1.jpg" alt="picsum photos">
+              </div>
+            </span>
+            <span class="hero__right-three heroAnim-element"></span>
+            <span class="hero__right-four heroAnim-element"></span>
+            <span class="hero__right-five heroAnim-element"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__colors-box">
+        <span class="hero__colors-btn cursorHover">
+          <button>
+            <i class='bx bxs-cog bx-spin'></i>
+          </button>
+        </span>
+
+        <p>Unlimited Colors</p>
+        <ul class="hero__colors-list">
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(1)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(2)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(3)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(4)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(5)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(6)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(7)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(8)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(9)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(10)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(11)></span>
+          </li>
+          <li class="hero__colors-item">
+            <span class=" cursorHover" onclick=changeColors(12)></span>
+          </li>
+        </ul>
+        <p>Magic Cursor</p>
+
+        <div class="hero__megic-btns">
+          <button class="hero__megic-one cursorHover"></button>
+          <button class="hero__megic-two cursorHover">
+            <i class='bx bx-pointer'></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero__myprofiles">
+        <ul class="hero__myprofiles-list">
+          <li class="hero__myprofiles-item">
+            <a class=" cursorHover" href="https://www.facebook.com/samandar.bohodirov.16" target="_blank">
+              <i class='bx bxl-facebook'></i>
+            </a>
+          </li>
+          <li class="hero__myprofiles-item">
+            <a class=" cursorHover" href="https://t.me/Bohodirovv_S" target="_blank">
+              <i class='bx bxl-telegram'></i>
+            </a>
+          </li>
+          <li class="hero__myprofiles-item">
+            <a class=" cursorHover" href="https://www.instagram.com/bohodirovv__" target="_blank">
+              <i class='bx bxl-instagram-alt'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__email-link">
+        <a class=" sectionBTN-2 cursorHover" href="#">bsd@gmail.com</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- -------------------------- MAIN PART -------------------------- -->
+
+  <main class="main" id="main">
+
+    <!-- -------------------------- ABOUT PART -------------------------- -->
+
+    <section class="about" id="about">
+      <div class="about__inner">
+        <div class="about__left">
+          <div class="about__left-img-box">
+            <img src="./media/images/mac-2.jpg" alt="picsum photos">
+          </div>
+          <div class="about__left-element-one"></div>
+          <div class="about__left-element-two"></div>
+        </div>
+
+        <div class="about__center" data-aos="fade-up">
+          <p class="about__center-tit sectionsTit" data-aos="fade-up">About Me</p>
+
+          <h3 class="about__center-title" data-aos="fade-up">
+            I'm <span>Samandar</span> <br> Web <span>Developer</span>
+          </h3>
+
+          <p class="about__center-from-tit" data-aos="fade-up">Based in Tashkent, Uzbekistan</p>
+          <p class="about__center-text sectionsText" data-aos="fade-up">
+            Hi! My name is Samandar Bohodirov. I am Frontend Developer,
+            and I'm very passionate and dedicated to my work. <br><br>
+            With as a professional Frontend Developer,
+            I have acquired the skills and knowledge
+            necessary to make your project a success.
+          </p>
+
+          <a class="about__center-cv-btn sectionBTN-1 cursorHover" href="./media/resume/Resume Samandar Bohodirovv.pdf"
+            download="">
+            Download CV<i class='bx bx-download'></i>
+          </a>
+        </div>
+
+        <div class="about__right">
+          <div class="about__right-img-box">
+            <img src="./media/images/mac-6.jpg" alt="picsum photos">
+          </div>
+          <div class="about__right-element"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------- SKILLS PART -------------------------- -->
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="skills__inner">
+          <div class="skills__left" data-aos="fade-up">
+            <p class="skills__left-tit sectionsTit">My Skills</p>
+
+            <h3 class="skills__left-title sectionsTitle">You Can Imagine <br> I Can Do</h3>
+            <p class="skills__left-text sectionsText">
+              I am working on a professional, visually sophisticated
+              and technologically proficient, responsive and multi-functional
+              creative personal resume portfolio template Samandar
+            </p>
+          </div>
+
+          <div class="skills__right" data-aos="fade-up">
+            <ul class="skills__right-list">
+              <li class="skills__right-item">
+                <div class="skills__right-item-title-box">
+                  <p>HTML, CSS, SASS</p>
+                  <span>90%</span>
+                </div>
+                <div class="skills__right-item-anim-box">
+                  <span class="skills__right-item-anim"></span>
+                </div>
+              </li>
+              <li class="skills__right-item">
+                <div class="skills__right-item-title-box">
+                  <p>Javascript</p>
+                  <span>72%</span>
+                </div>
+                <div class="skills__right-item-anim-box">
+                  <span class="skills__right-item-anim"></span>
+                </div>
+              </li>
+              <li class="skills__right-item">
+                <div class="skills__right-item-title-box">
+                  <p>React, Redux</p>
+                  <span>62%</span>
+                </div>
+                <div class="skills__right-item-anim-box">
+                  <span class="skills__right-item-anim"></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------- PORTFOLIO PART -------------------------- -->
+
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__anim-element"></div>
+
+      <div class="container">
+        <div class="portfolio__inner">
+          <p class="portfolio__tit sectionsTit">Selected works</p>
+          <h3 class="portfolio__title sectionsTitle">Check my portfolio</h3>
+
+          <ul class="portfolio__categor-list">
+            <li class="portfolio__categor-item">
+              <p class="categorBtns cursorHover" id="All">All</p>
+            </li>
+            <li class="portfolio__categor-item">
+              <p class="categorBtns cursorHover" id="React">React</p>
+            </li>
+            <li class="portfolio__categor-item">
+              <p class="categorBtns cursorHover" id="Game">Game</p>
+            </li>
+            <li class="portfolio__categor-item">
+              <p class="categorBtns cursorHover" id="Animation">Animation</p>
+            </li>
+            <li class="portfolio__categor-item">
+              <p class="categorBtns cursorHover" id="Design">Design</p>
+            </li>
+          </ul>
+
+          <div class="portfolio__projects">
+            <ul class="portfolio__projects-list">
+              <li class="portfolio__projects-item cursorHover" id="React" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-1.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/react-devbooks" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://badiyat-react-project.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="React" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-4.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/redux-employ-project" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://redux-employ-samandar.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="React" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-10.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/7-IMTIHON.git" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://elessi-organic-samandar-bohodirov.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Design" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-3.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/instagram-maket" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://instagram-mm.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Design" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-2.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/imtihonnnn-3" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://samandar-imtihon-3.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="React" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-5.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/mac-sinif-ishi" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://mac-sinif-ishi.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="React" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-6.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/jaegar-resto-react" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://jaegar-resto-react.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Game" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-7.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/tic-tac-toe" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://tic-tac-tooe-m.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Animation" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-8.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/cube-makett" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://sleepy-ardinghelli-cec732.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Design" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-9.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/greenshop-project" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://greenshop-project-samandar.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="portfolio__projects-item cursorHover" id="Game" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-11.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/rock-paper" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://rock-paper-scissors-m.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Animation" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-12.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/stark" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://stark-m.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Animation" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-13.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/arun-roy" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://arun-m.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Game" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-14.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/chess" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://chess-s.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Animation" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-15.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/imtihon-2" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://imtihon-22.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Design" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-16.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/minimalist-m" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://minimalist-m.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Design" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-17.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/product-m" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://reverent-joliot-b27de1.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__projects-item cursorHover" id="Animation" data-aos="zoom-in-up">
+                <div class="portfolio__projects-item-img-box">
+                  <img src="./media/images/port-18.png" alt="marketifythemes">
+                  <div class="portfolio__projects-item-hover">
+                    <a href="https://github.com/samandar-dev/wwwwww" target="_blank">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www-m.netlify.app" target="_blank">
+                      <i class='bx bxl-netlify'></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="portfolio__pagnition">
+              <button class="portfolio__pag-btn cursorHover" id="pagLeftBtn">
+                <i class='bx bx-left-arrow-alt'></i>
+              </button>
+              <ul class="portfolio__pag-list"></ul>
+              <button class="portfolio__pag-btn cursorHover" id="pagRightBtn">
+                <i class='bx bx-right-arrow-alt'></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------- SERVICE PART -------------------------- -->
+
+    <section class="service" id="service">
+      <div class="service__anim-element1"></div>
+      <div class="service__anim-element2"></div>
+
+      <div class="container">
+        <div class="service__inner">
+          <ul class="service__list">
+            <li class="service__item" data-aos="fade-up">
+              <p class="service__tit sectionsTit">What I Do</p>
+              <h3 class="service__title sectionsTitle">My Services</h3>
+              <p class="service__text sectionsText">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Corporis eaque impedit esse dolor exercitationem
+                rerum hic iusto earum fugiat molestias voluptatum laudantium.
+              </p>
+            </li>
+            <li class="service__item" data-aos="fade-up">
+              <div class="service__item-centent cursorHover">
+                <div class="service__item-left">
+                  <span>
+                    <i class='bx bx-math'></i>
+                  </span>
+                  <img src="./media/images/service-icon-img.png" alt="service icon">
+                </div>
+
+                <div class="service__item-right">
+                  <h4 class="service__item-title sectionsTitle">Functional Website</h4>
+                  <p class="service__item-tit">Starts from <span>$49</span></p>
+                  <p class="service__item-text sectionsText">
+                    Lorem, ipsum dolor sit amet consectet elit.
+                    Animi, ipsam. Fuga qui nemo id? Lorem, ipsum dolor Animi, ipsam.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="service__item" data-aos="fade-up">
+              <div class="service__item-centent cursorHover">
+                <div class="service__item-left">
+                  <span>
+                    <i class='bx bxl-slack'></i>
+                  </span>
+                  <img src="./media/images/service-icon-img.png" alt="service icon">
+                </div>
+
+                <div class="service__item-right">
+                  <h4 class="service__item-title sectionsTitle">Animation Website</h4>
+                  <p class="service__item-tit">Starts from <span>$59</span></p>
+                  <p class="service__item-text sectionsText">
+                    Lorem, ipsum dolor sit amet consectet elit.
+                    Animi, ipsam. Fuga qui nemo id? Lorem, ipsum dolor Animi, ipsam.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="service__item" data-aos="fade-up">
+              <div class="service__item-centent cursorHover">
+                <div class="service__item-left">
+                  <span>
+                    <i class='bx bx-landscape'></i>
+                  </span>
+                  <img src="./media/images/service-icon-img.png" alt="service icon">
+                </div>
+
+                <div class="service__item-right">
+                  <h4 class="service__item-title sectionsTitle">Creative Website</h4>
+                  <p class="service__item-tit">Starts from <span>$69</span></p>
+                  <p class="service__item-text sectionsText">
+                    Lorem, ipsum dolor sit amet consectet elit.
+                    Animi, ipsam. Fuga qui nemo id? Lorem, ipsum dolor Animi, ipsam.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="service__item" data-aos="fade-up">
+              <div class="service__item-centent cursorHover">
+                <div class="service__item-left">
+                  <span>
+                    <i class='bx bx-math'></i>
+                  </span>
+                  <img src="./media/images/service-icon-img.png" alt="service icon">
+                </div>
+
+                <div class="service__item-right">
+                  <h4 class="service__item-title sectionsTitle">Functional Website</h4>
+                  <p class="service__item-tit">Starts from <span>$49</span></p>
+                  <p class="service__item-text sectionsText">
+                    Lorem, ipsum dolor sit amet consectet elit.
+                    Animi, ipsam. Fuga qui nemo id? Lorem, ipsum dolor Animi, ipsam.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="service__item" data-aos="fade-up">
+              <div>
+                <h4 class="service__item-title sectionsTitle">Do You Want Something Different?</h4>
+                <a class="service__item-btn sectionBTN-1 cursorHover" href="#contact">Knock Me <i
+                    class='bx bx-envelope'></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------- PROJECTS COUNT PART -------------------------- -->
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <ul class="projects__list">
+          <li class="projects__item">
+            <p class="projects__item-number">20 <span>+</span></p>
+            <p class="projects__item-title">React <br> Projects</p>
+          </li>
+          <li class="projects__item">
+            <p class="projects__item-number">55 <span>+</span></p>
+            <p class="projects__item-title">JavaScript <br> Projects</p>
+          </li>
+          <li class="projects__item">
+            <p class="projects__item-number">10 <span>+</span></p>
+            <p class="projects__item-title">Happy <br> Clients</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="projects__anim-elements"></div>
+    </section>
+
+    <!-- -------------------------- CONTACT PART -------------------------- -->
+
+    <section class="contact" id="contact">
+      <div class="contact__anim-element"></div>
+
+      <div class="container">
+        <div class="contact__inner">
+          <p class="contact__tit sectionsTit">Get in Touch</p>
+          <h3 class="contact__title sectionsTitle">Connect with Me with Confidence</h3>
+
+          <div class="contact__form-box">
+            <div class="contact__left" data-aos="fade-up">
+              <p class="contact__left-text sectionsText">
+                Please fill out the form on this section to
+                contact with me. Or call between 9:00 a.m.
+                and 8:00 p.m. ET,Monday through Friday
+              </p>
+              <ul class="contact__left-list">
+                <li class="contact__left-item">
+                  <span class="contact__left-item-icon">
+                    <i class='bx bx-phone-call'></i>
+                  </span>
+
+                  <div class="contact__left-item-tit">
+                    <span>Call me</span>
+                    <p>+998 99 821 54 18</p>
+                  </div>
+                </li>
+                <li class="contact__left-item">
+                  <span class="contact__left-item-icon">
+                    <i class='bx bx-envelope'></i>
+                  </span>
+
+                  <div class="contact__left-item-tit">
+                    <span>Email</span>
+                    <p class="sectionBTN-2 cursorHover">bsd@gmail.com</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact__right" data-aos="fade-up">
+              <form class="contact__form" action="#">
+                <!-- <p class="contact__form-validation-tit sectionsText">Please Fill Required Fields</p> -->
+                <input class="contact__form-input" type="text" name="name" id="fName" placeholder="Your Name">
+                <input class="contact__form-input" type="text" name="email" id="email" placeholder="Your Email">
+                <input class="contact__form-input" type="number" name="number" id="number" placeholder="Your Phone">
+                <textarea class="contact__form-textarea" name="message" id="message"
+                  placeholder="Yout message here"></textarea>
+
+                <div>
+                  <button class="contact__form-btn sectionBTN-1 cursorHover" type="submit">
+                    Submit Message <i class='bx bx-paper-plane'></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- -------------------------- FOOTER PART -------------------------- -->
+
+  <footer class="footer" id="footer">
+    <div class="footer__anim-elements">
+      <a href="#">
+        <span class="footer__anim-icon1">
+          <i class='bx bx-chevron-up'></i>
+        </span>
+        <span class="footer__anim-icon2">
+          <i class='bx bx-chevrons-up'></i>
+        </span>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__title-connect">
+          <div class="footer__title-box">
+            <h3 class="footer__title">BS</h3>
+            <div class="footer__title-element"></div>
+          </div>
+          <div class="footer__connect">
+            <p>Connect</p>
+
+            <ul class="footer__connect-list">
+              <li class="footer__connect-item">
+                <a class=" cursorHover" href="https://www.facebook.com/samandar.bohodirov.16" target="_blank">
+                  <i class='bx bxl-facebook'></i>
+                </a>
+              </li>
+              <li class="footer__connect-item">
+                <a class=" cursorHover" href="https://t.me/Bohodirovv_S" target="_blank">
+                  <i class='bx bxl-telegram'></i>
+                </a>
+              </li>
+              <li class="footer__connect-item">
+                <a class=" cursorHover" href="https://www.instagram.com/bohodirovv__" target="_blank">
+                  <i class='bx bxl-instagram'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__desc">
+          <p class="sectionsText">
+            Lorem ipsum dolor sit amet. <a class="sectionBTN-2 cursorHover" href="#">Project</a>© 2022
+          </p>
+
+          <ul class="footer__desc-list">
+            <li class="footer__desc-item">
+              <a class="sectionsText sectionBTN-2 cursorHover" href="#">Terms & Condition</a>
+            </li>
+            <li class="footer__desc-item">
+              <a class="sectionsText sectionBTN-2 cursorHover" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__desc-item">
+              <a class="sectionsText sectionBTN-2 cursorHover" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- -------------------------- SITE ENTRANCE ANIM PART -------------------------- -->
+
+  <div class="siteEntranceAnim">
+    <span class="siteEntranceAnimLine"></span>
+  </div>
+
+  <!-- -------------------------- CURSOR PART -------------------------- -->
+
+  <div class="cursor__box" id="cursor-box">
+    <div class="cursor" id="cursor-hov"></div>
+    <div class="cursor-spot"></div>
+  </div>
+
+  <!-- -------------------------- SCRIPTS PART -------------------------- -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+  <script src="scripts/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

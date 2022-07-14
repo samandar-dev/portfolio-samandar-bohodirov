@@ -1,0 +1,246 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 120px;
+  padding-bottom: 65px;
+  background-color: $--color-5;
+
+  &__anim-elements {
+    position: absolute;
+    top: -77px;
+    right: 100px;
+    width: 84px;
+    height: 143px;
+    background-color: var(--primary-colors);
+    cursor: pointer;
+
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    &:hover {
+      .footer__anim-icon1 {
+        opacity: 0;
+      }
+      .footer__anim-icon2 {
+        opacity: 1;
+      }
+    }
+  }
+  &__anim-icon1,
+  &__anim-icon2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    line-height: 40px;
+    color: $--color-1;
+    transition: all 0.3s ease;
+  }
+  &__anim-icon2 {
+    opacity: 0;
+  }
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  &__title-connect {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 110px;
+  }
+  &__title-box {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  &__title {
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: 700;
+    color: $--color-1;
+    font-family: $--font-family-1;
+  }
+  &__title-element {
+    position: absolute;
+    width: 320px;
+    height: 300px;
+    border: 6px solid #fff;
+    top: -170px;
+    left: -45px;
+  }
+  &__connect {
+    width: auto;
+    display: flex;
+    align-items: center;
+
+    p {
+      color: $--color-1;
+      font-family: $--font-family-1;
+      font-weight: 700;
+      font-size: 18px;
+
+      padding-right: 30px;
+      display: inline-block;
+    }
+  }
+  &__connect-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+  &__connect-item {
+    margin: 0 5px;
+
+    a {
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
+      line-height: 48px;
+      text-align: center;
+
+      display: inline-block;
+
+      border-radius: 100%;
+      color: var(--primary-colors);
+      background-color: $--color-1;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $--color-1;
+        background-color: var(--primary-colors);
+      }
+    }
+  }
+  &__desc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      color: $--color-6;
+      a {
+        color: $--color-6;
+        text-decoration: none;
+        font-family: $--font-family-2;
+
+        &:hover {
+          color: $--color-1;
+        }
+      }
+    }
+  }
+  &__desc-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  &__desc-item {
+    margin: 0 22px;
+
+    a {
+      font-family: $--font-family-2 !important;
+      text-decoration: none;
+      color: $--color-6;
+      font-weight: 400;
+
+      &:hover {
+        color: $--color-1 !important;
+      }
+    }
+  }
+}
+
+// -------------- MEDIA PART --------------
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    &__anim-elements {
+      position: absolute;
+      top: -65px;
+      right: 80px;
+      width: 70px;
+      height: 130px;
+      background-color: var(--primary-colors);
+      cursor: pointer;
+
+      a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      &:hover {
+        .footer__anim-icon1 {
+          opacity: 0;
+        }
+        .footer__anim-icon2 {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1040px) {
+  .footer {
+    &__anim-elements {
+      display: none;
+    }
+    &__title-connect {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+    &__title-box {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__title-element {
+      display: none;
+      text-align: left;
+    }
+    &__connect {
+      width: 100%;
+      justify-content: start;
+    }
+    &__connect-list {
+      flex-wrap: wrap;
+    }
+    &__desc {
+      flex-direction: column;
+      justify-content: start;
+      display: inline-block;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+    &__desc-list {
+      flex-wrap: wrap;
+    }
+  }
+}

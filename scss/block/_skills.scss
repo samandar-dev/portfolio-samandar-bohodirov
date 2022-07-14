@@ -1,0 +1,133 @@
+.skills {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 160px;
+  padding-bottom: 555px;
+  background: var(--primary-colors);
+
+  &__inner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &__left {
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding-right: 63px;
+  }
+  &__left-tit {
+    color: $--color-1;
+  }
+  &__left-title {
+    color: $--color-1;
+  }
+  &__left-text {
+    color: $--color-1;
+    margin-top: 32px;
+  }
+  &__right {
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding-left: 63px;
+  }
+  &__right-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  &__right-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 27px;
+
+    &:nth-child(2) .skills__right-item-anim-box span {
+      width: 72%;
+    }
+    &:nth-child(3) {
+      margin-bottom: 0;
+      .skills__right-item-anim-box span {
+        width: 56%;
+      }
+    }
+  }
+  &__right-item-title-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 17px;
+
+    p {
+      color: $--color-1;
+      font-family: $--font-family-1;
+      line-height: 31px;
+      font-weight: 700;
+      font-size: 21px;
+    }
+    span {
+      color: $--color-1;
+      font-family: $--font-family-2;
+      line-height: 30px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+  &__right-item-anim-box {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-radius: $--border-redius-2;
+    background: #8fbbbc;
+  }
+  &__right-item-anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 88%;
+    height: 100%;
+    background: $--color-1;
+    border-radius: 25px 0px 0px 25px;
+  }
+}
+
+// ------------------ MEDIA PART ------------------
+
+@media screen and (max-width: 1400px) {
+  .skills {
+    &__right-item-title-box {
+      margin-bottom: 8px;
+      p {
+        line-height: 31px;
+        font-size: 19px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1040px) {
+  .skills {
+    &__inner {
+      flex-direction: column;
+    }
+    &__inner div {
+      width: 100%;
+      padding: 0;
+    }
+    &__left {
+      margin-bottom: 50px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .skills {
+    padding-top: 130px;
+    padding-bottom: 525px;
+  }
+}
