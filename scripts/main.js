@@ -96,6 +96,19 @@ cursorHoverElements.forEach(element => {
   })
 })
 
+let cursorDefault = document.querySelector('.hero__megic-two')
+let cursorSty = document.querySelector('.hero__megic-one')
+
+cursorDefault.addEventListener('click', () => {
+  cursor.classList.add('d-none')
+  cursorSpor.classList.add('d-none')
+})
+
+cursorSty.addEventListener('click', () => {
+  cursor.classList.remove('d-none')
+  cursorSpor.classList.remove('d-none')
+})
+
 // -----------------------------------------------------------------------------
 // ------------------ SERVICE ITEMS HOVER EFECT  -------------------------------
 

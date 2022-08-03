@@ -61,8 +61,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 17px;
+    justify-content: end;
 
     p {
       color: $--color-1;
@@ -70,6 +69,8 @@
       line-height: 31px;
       font-weight: 700;
       font-size: 21px;
+      margin-right: 35px;
+      white-space: nowrap;
     }
     span {
       color: $--color-1;
@@ -122,6 +123,9 @@
     }
     &__left {
       margin-bottom: 50px;
+    }
+    &__right-item-title-box {
+      justify-content: start;
     }
   }
 }
