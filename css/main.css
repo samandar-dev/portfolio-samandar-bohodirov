@@ -2072,7 +2072,7 @@ a:hover {
   line-height: 31px;
   font-weight: 700;
   font-size: 21px;
-  margin-right: 35px;
+  margin-left: 35px;
   white-space: nowrap;
 }
 
@@ -2132,12 +2132,26 @@ a:hover {
         -ms-flex-pack: start;
             justify-content: start;
   }
+  .skills__right-item-title-box p {
+    margin-left: 0;
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .skills {
     padding-top: 130px;
     padding-bottom: 525px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills__right-item-title-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills__right-item-title-box p {
+    margin-bottom: 10px;
   }
 }
 

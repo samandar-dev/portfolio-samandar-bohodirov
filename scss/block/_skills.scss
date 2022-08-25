@@ -69,7 +69,7 @@
       line-height: 31px;
       font-weight: 700;
       font-size: 21px;
-      margin-right: 35px;
+      margin-left: 35px;
       white-space: nowrap;
     }
     span {
@@ -126,6 +126,10 @@
     }
     &__right-item-title-box {
       justify-content: start;
+      p {
+        margin-left: 0;
+        margin-right: 20px;
+      }
     }
   }
 }
@@ -133,5 +137,15 @@
   .skills {
     padding-top: 130px;
     padding-bottom: 525px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .skills {
+    &__right-item-title-box {
+      flex-wrap: wrap;
+      p {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
