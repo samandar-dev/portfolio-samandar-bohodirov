@@ -25,6 +25,7 @@ function scrollFunction() {
       itm.classList.remove('linkScroll-black')
     })
   }
+
 }
 
 // ---------------------------------------------------------------
@@ -135,11 +136,11 @@ let pagLeftBtn = document.querySelector('#pagLeftBtn');
 let pagRightBtn = document.querySelector('#pagRightBtn');
 let pagnitionList = document.querySelector('.portfolio__pag-list');
 
-let itemLength = portfolioItems.length / 3
 let pagnitionLength = portfolioItems.length / 6
+let itemLength = portfolioItems.length / 3
+let pagCount = 1
 let itemID = 1
 let count = 1
-let pagCount = 1
 
 // ------------------------------------------------------------------------------------------
 //---------------------------------- PARGNITION CLICK LEFT ----------------------------------
